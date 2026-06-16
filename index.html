@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lavinia Daretti</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f4f4f0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 400px;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 0.5px solid rgba(0,0,0,0.1);
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    }
+
+    .card-header {
+      background: #0097b2;
+      padding: 2rem 1.5rem 2.5rem;
+    }
+
+    .avatar {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 1rem;
+      border: 2px solid rgba(255,255,255,0.35);
+    }
+
+    .card-header h1 {
+      font-size: 22px;
+      font-weight: 500;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .card-header p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .contact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-list li a,
+    .contact-list li .row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      color: #1a1a1a;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 0.5px solid rgba(0,0,0,0.1);
+      background: #f8f8f6;
+      transition: background 0.15s;
+    }
+
+    .contact-list li a:hover { background: #efefec; }
+
+    .icon-wrap {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 17px;
+    }
+
+    .icon-teal   { background: #e0f5f8; color: #0097b2; }
+    .icon-purple { background: #EEEDFE; color: #534AB7; }
+    .icon-coral  { background: #FAECE7; color: #993C1D; }
+
+    .label-block { flex: 1; }
+    .label-sub { display: block; font-size: 12px; color: #888; margin-bottom: 2px; }
+    .label-val { display: block; font-size: 14px; }
+
+    .chevron { color: #bbb; font-size: 16px; }
+
+    .divider {
+      height: 0.5px;
+      background: rgba(0,0,0,0.08);
+      margin: 1.25rem 0;
+    }
+
+    .save-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 13px;
+      background: #0097b2;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: inherit;
+      transition: opacity 0.15s;
+    }
+
+    .save-btn:hover { opacity: 0.88; }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1a1a; }
+      .card { background: #242424; border-color: rgba(255,255,255,0.1); }
+      .contact-list li a,
+      .contact-list li .row { background: #2e2e2e; border-color: rgba(255,255,255,0.08); color: #f0f0f0; }
+      .contact-list li a:hover { background: #383838; }
+      .label-sub { color: #888; }
+      .label-val { color: #f0f0f0; }
+      .divider { background: rgba(255,255,255,0.08); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header">
+      <div class="avatar">LD</div>
+      <h1>Lavinia Daretti</h1>
+      <p>Milan, Italy</p>
+    </div>
+
+    <div class="card-body">
+      <ul class="contact-list">
+        <li>
+          <a href="tel:+393455308649">
+            <span class="icon-wrap icon-teal" aria-hidden="true"><i class="ti ti-phone"></i></span>
+            <span class="label-block">
+              <span class="label-sub">Phone</span>
+              <span class="label-val">+39 345 5308649</span>
+            </span>
+            <i class="ti ti-chevron-right chevron" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:LaviniaDaretti@proton.me">
+            <span class="icon-wrap icon-purple" aria-hidden="true"><i class="ti ti-mail"></i></span>
+            <span class="label-block">
+              <span class="label-sub">Email</span>
+              <span class="label-val">LaviniaDaretti@proton.me</span>
+            </span>
+            <i class="ti ti-chevron-right chevron" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <span class="row">
+            <span class="icon-wrap icon-coral" aria-hidden="true"><i class="ti ti-map-pin"></i></span>
+            <span class="label-block">
+              <span class="label-sub">Location</span>
+              <span class="label-val">Milan, Italy</span>
+            </span>
+          </span>
+        </li>
+      </ul>
+
+      <div class="divider"></div>
+
+      <button class="save-btn" onclick="saveContact()">
+        <i class="ti ti-user-plus" aria-hidden="true"></i>
+        Save contact
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function saveContact() {
+      const vcard = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        "FN:Lavinia Daretti",
+        "TEL;TYPE=CELL:+393455308649",
+        "EMAIL;TYPE=WORK:LaviniaDaretti@proton.me",
+        "ADR;TYPE=WORK:;;Milan;;Italy;;",
+        "END:VCARD"
+      ].join("\r\n");
+
+      const blob = new Blob([vcard], { type: "text/vcard" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "lavinia-daretti.vcf";
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
